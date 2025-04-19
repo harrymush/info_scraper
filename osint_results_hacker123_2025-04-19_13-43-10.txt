@@ -1,0 +1,7 @@
+Results for username: hacker123
+
+[+] Found on GitHub: https://github.com/hacker123
+[-] Not found on Twitter
+[+] Found on Reddit: https://www.reddit.com/user/hacker123
+[+] Found on Instagram: https://www.instagram.com/hacker123
+[+] Found on TikTok: https://www.tiktok.com/@hacker123
