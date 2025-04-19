@@ -111,10 +111,37 @@ class OSINTScoutGUI:
         frame.pack(fill=tk.X, pady=(0, 15))
         
         ttk.Label(frame, text="Search Type:", font=('Playfair Display', 11, 'bold')).pack(side=tk.LEFT)
-        ttk.Radiobutton(frame, text="Username", variable=self.search_type, 
-                       value="username").pack(side=tk.LEFT, padx=20)
-        ttk.Radiobutton(frame, text="Email", variable=self.search_type, 
-                       value="email").pack(side=tk.LEFT)
+        
+        # Create radio buttons without hover effect
+        self.username_radio = tk.Radiobutton(
+            frame,
+            text="Username",
+            variable=self.search_type,
+            value="username",
+            bg=self.bg_color,
+            fg=self.fg_color,
+            font=('Playfair Display', 10),
+            selectcolor=self.bg_color,
+            activebackground=self.bg_color,
+            activeforeground=self.fg_color,
+            highlightthickness=0
+        )
+        self.username_radio.pack(side=tk.LEFT, padx=20)
+        
+        self.email_radio = tk.Radiobutton(
+            frame,
+            text="Email",
+            variable=self.search_type,
+            value="email",
+            bg=self.bg_color,
+            fg=self.fg_color,
+            font=('Playfair Display', 10),
+            selectcolor=self.bg_color,
+            activebackground=self.bg_color,
+            activeforeground=self.fg_color,
+            highlightthickness=0
+        )
+        self.email_radio.pack(side=tk.LEFT)
     
     def create_input_field(self):
         frame = ttk.Frame(self.main_frame)
